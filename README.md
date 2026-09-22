@@ -17,3 +17,5 @@ Windows 11 latest build (25H2). Older Windows builds ship a slightly different
 `tlscsp.dll`, so the key offset may need a small tweak — not covered here.
 
 NOTE- The embedded key is public, so anyone can decrypt. Use BYOK (Bring Your Own Key) — patch the 16 bytes at base + 0x141D0 in memory with your own key before calling the export. Now the DLL encrypts/decrypts with your secret, and your loader still carries no key and no crypto.
+
+<img width="1906" height="1031" alt="Finding" src="https://github.com/user-attachments/assets/861ab164-cea7-4fba-a6d9-39f17d586ecb" />
